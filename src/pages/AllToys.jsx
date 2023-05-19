@@ -5,10 +5,8 @@ const AllToys = () => {
   return (
     <Container className="my-24">
       <h1 className="text-center text-4xl font-bold mb-8">All Toys</h1>
-      {/* Table */}
       <div className="overflow-x-auto my-8 w-full mx-auto ">
         <table className="table w-full">
-          {/* head */}
           <thead>
             <tr>
               <th>Toy Name</th>
@@ -20,7 +18,6 @@ const AllToys = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
             {toys.slice(0, 20).map((toy) => (
               <tr key={toy.id}>
                 <td>
@@ -35,7 +32,6 @@ const AllToys = () => {
                     </div>
                     <div>
                       <div className="font-bold">{toy.toyName}</div>
-                      {/* <div className="text-sm opacity-50">United States</div> */}
                     </div>
                   </div>
                 </td>
@@ -61,16 +57,6 @@ const AllToys = () => {
               </tr>
             ))}
           </tbody>
-          {/* foot */}
-          {/* <tfoot>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
-            </tr>
-          </tfoot> */}
         </table>
       </div>
     </Container>
