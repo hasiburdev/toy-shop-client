@@ -4,7 +4,6 @@ import { auth } from "../../utils/firebase";
 import useFirebaseUser from "../../hooks/useFirebaseUser";
 const Navbar = () => {
   const { user } = useFirebaseUser();
-  console.log(user);
   const handleLogOut = async () => {
     await auth.signOut();
   };

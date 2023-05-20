@@ -16,10 +16,11 @@
 - [ ] All Toys
   - [ ] Limit by 20
 - [ ] Single Toy [Private]
-- [ ] Add a toy [Private]
+- [x] Add a toy [Private]
+
+- [ ] My Toys [Private]
   - [ ] Update
   - [ ] Delete
-- [ ] My Toys [Private]
 - [x] Show toast
 - [x] 404 Page
 - [x] Enviromnent Variable
