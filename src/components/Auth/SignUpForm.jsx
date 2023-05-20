@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../utils/firebase";
 import AuthButton from "./AuthButton";
 import Spinner from "../Shared/Spinner";
+import { useNavigate } from "react-router-dom";
 const EMAIL_REGEX = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
 
 const SignUpForm = () => {
@@ -14,6 +15,8 @@ const SignUpForm = () => {
   const [profileImageUrl, setProfileImageUrl] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,6 +41,7 @@ const SignUpForm = () => {
         password
       );
       toast.success("Account created successfully!");
+      navigate("/");
       console.log(authResponse);
     } catch (error) {
       console.error(error);
