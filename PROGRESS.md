@@ -1,0 +1,25 @@
+- [x] Add navbar
+- [x] 404 Page
+- [x] Login
+- [x] Registration
+- [ ] Home Page
+  - [ ] Banner
+  - [ ] Gallery
+  - [ ] Shop by Category
+    - [ ] 3 tabs of subcategory
+    - Picture
+    - Name
+    - Price
+    - Rating
+    - View Details
+- [x] Blog
+- [ ] All Toys
+  - [ ] Limit by 20
+- [ ] Single Toy [Private]
+- [ ] Add a toy [Private]
+  - [ ] Update
+  - [ ] Delete
+- [ ] My Toys [Private]
+- [x] Show toast
+- [x] 404 Page
+- [x] Enviromnent Variable
