@@ -27,7 +27,7 @@ export const toys = [
     link: "#",
   },
   {
-    id: 3,
+    id: 10,
     seller: "Playtime Toys",
     toyName: "Dollhouse Set",
     subCategory: "Pretend Play",
